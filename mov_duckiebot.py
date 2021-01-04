@@ -79,7 +79,7 @@ while True:
         action = np.array([0.0, 1])
 
 
-    #Esto es ser un demente
+    
     
     
 
@@ -98,6 +98,8 @@ while True:
 
     # Se muestra en una ventana llamada "patos" la observación del simulador
     cv2.imshow("patos", cv2.cvtColor(obs, cv2.COLOR_RGB2BGR))
+    #guarda la imagen obs en la carpeta framessim con el nombre de la forma 'map_name'+'numero'+'jpg' Ej: 'udem1-100.jpg'
+    #el path donde esta framessim debe ser modificado acorde a su propia maquina
     cv2.imwrite('/Users/osvaldocartagena/framessim/'+'udem1-'+str(k)+'.jpg',cv2.cvtColor(obs, cv2.COLOR_RGB2BGR))
     k=k+1
 
